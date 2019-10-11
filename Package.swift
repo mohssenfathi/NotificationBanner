@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "Notification Banner", targets: ["NotificationBannerSwift"]),
     ],
     dependencies: [
-        .package(name: "SnapKit", from: "5.0.0"),
+        .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0"),
         .package(url: "https://github.com/cbpowell/MarqueeLabel.git", .branch("xcode11"))
         
     ],
