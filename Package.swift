@@ -3,12 +3,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "Notification Banner",
+    name: "NotificationBannerSwift",
     platforms: [
         .iOS(.v10)
     ],
     products: [
-        .library(name: "Notification Banner", targets: ["NotificationBannerSwift"]),
+        .library(name: "NotificationBannerSwift", targets: ["NotificationBannerSwift"]),
     ],
     dependencies: [
         .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0"),
@@ -18,7 +18,6 @@ let package = Package(
     targets: [
         .target(
             name: "NotificationBannerSwift",
-            dependencies: ["NotificationBannerSwift"],
             path: "NotificationBanner/Classes"
         )
     ]
