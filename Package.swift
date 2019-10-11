@@ -16,7 +16,11 @@ let package = Package(
         
     ],
     targets: [
-        .target(name: "NotificationBannerSwift", dependencies: ["NotificationBannerSwift"])
+        .target(
+            name: "NotificationBannerSwift",
+            dependencies: ["NotificationBannerSwift"],
+            path: "NotificationBanner/Classes"
+        )
     ]
 )
 
